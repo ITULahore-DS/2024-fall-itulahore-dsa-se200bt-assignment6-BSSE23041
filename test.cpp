@@ -130,3 +130,102 @@ TEST_CASE("Peek from empty stack test", "[peek]") {
 }
 
 
+
+//Queue Test cases
+/*
+TEST_CASE("Test if queue is initially empty", "[isEmpty]") {
+    Queue myQueue;
+
+    // Check if the queue is empty on initialization
+    REQUIRE(myQueue.isEmpty() == true);
+}
+
+TEST_CASE("Enqueue function test", "[enqueue]") {
+    Queue myQueue;
+
+    // Enqueue elements into the queue
+    myQueue.enqueue(10);
+    myQueue.enqueue(20);
+    myQueue.enqueue(30);
+
+    // Ensure the queue is not empty
+    REQUIRE(myQueue.isEmpty() == false);
+}
+
+TEST_CASE("Dequeue function test", "[dequeue]") {
+    Queue myQueue;
+
+    // Enqueue elements into the queue
+    myQueue.enqueue(10);
+    myQueue.enqueue(20);
+    myQueue.enqueue(30);
+
+    // Dequeue the front element
+    myQueue.dequeue();
+    REQUIRE(myQueue.size() == 2);  // Size should now be 2
+
+    // Dequeue another element
+    myQueue.dequeue();
+    REQUIRE(myQueue.size() == 1);  // Size should now be 1
+
+    // Dequeue the last element
+    myQueue.dequeue();
+    REQUIRE(myQueue.isEmpty() == true);  // Queue should now be empty
+}
+
+TEST_CASE("Size function test", "[size]") {
+    Queue myQueue;
+
+    // Initially, size should be 0
+    REQUIRE(myQueue.size() == 0);
+
+    // Enqueue elements into the queue
+    myQueue.enqueue(10);
+    REQUIRE(myQueue.size() == 1);
+
+    myQueue.enqueue(20);
+    REQUIRE(myQueue.size() == 2);
+
+    myQueue.enqueue(30);
+    REQUIRE(myQueue.size() == 3);
+
+    // Dequeue an element
+    myQueue.dequeue();
+    REQUIRE(myQueue.size() == 2);
+
+    // Dequeue another element
+    myQueue.dequeue();
+    REQUIRE(myQueue.size() == 1);
+
+    // Dequeue the last element
+    myQueue.dequeue();
+    REQUIRE(myQueue.size() == 0);
+}
+
+TEST_CASE("Dequeue from empty queue test", "[dequeue]") {
+    Queue myQueue;
+
+    // Attempt to dequeue from an empty queue
+    myQueue.dequeue(); // Should handle underflow gracefully
+
+    // Ensure the queue is still empty
+    REQUIRE(myQueue.isEmpty() == true);
+}
+
+TEST_CASE("Clear queue test", "[clear]") {
+    Queue myQueue;
+
+    // Enqueue elements into the queue
+    myQueue.enqueue(10);
+    myQueue.enqueue(20);
+    myQueue.enqueue(30);
+
+    // Clear the queue
+    myQueue.clear();  // Calling destructor to clear the queue (assuming clear() is inside destructor)
+
+    // Ensure the queue is empty
+    REQUIRE(myQueue.isEmpty() == true);
+    REQUIRE(myQueue.size() == 0);
+}
+
+*/
