@@ -5,8 +5,8 @@ using namespace std;
 void displayInitialMenu()
 {
     cout << "Select Data Structure" << endl;
-    cout << "1. Stack"<< endl;
-    cout << "2. Queue"<< endl;
+    cout << "1. Stack" << endl;
+    cout << "2. Queue" << endl;
     cout << "3. Exit" << endl;
     cout << "Choose an option: ";
 }
@@ -17,12 +17,13 @@ void stackMenu(Stack &myStack)
     while (true)
     {
         cout << "Stack Operations" << endl;
-        cout << "1. Push"<< endl;
-        cout << "2. Pop"<< endl;
-        cout << "3. Peek"<< endl;
-        cout << "4. Check if Empty"<< endl;
-        cout << "5. Clear Stack"<< endl;
-        cout << "6. Back to Data Structure Selection" << endl;
+        cout << "1. Push" << endl;
+        cout << "2. Pop" << endl;
+        cout << "3. Peek" << endl;
+        cout << "4. Check if Empty" << endl;
+        cout << "5. Clear Stack" << endl;
+        cout << "6. Print Stack" << endl;
+        cout << "7. Back to Data Structure Selection" << endl;
         cout << "Choose an option: ";
         cin >> choice;
 
@@ -52,6 +53,9 @@ void stackMenu(Stack &myStack)
             cout << "Stack cleared." << endl;
             break;
         case 6:
+            myStack.printStack();
+            break;
+        case 7:
             return;
         default:
             cout << "Invalid option, try again." << endl;
@@ -65,11 +69,12 @@ void queueMenu(Queue &myQueue)
     while (true)
     {
         cout << "--- Queue Operations ---" << endl;
-        cout << "1. Enqueue"<< endl;
-        cout << "2. Dequeue"<< endl;
-        cout << "3. Check if Empty"<< endl;
-        cout << "4. Clear Queue"<< endl;
-        cout << "5. Back to Data Structure Selection" << endl;
+        cout << "1. Enqueue" << endl;
+        cout << "2. Dequeue" << endl;
+        cout << "3. Check if Empty" << endl;
+        cout << "4. Clear Queue" << endl;
+        cout << "5.Print Queue" << endl;
+        cout << "6. Back to Data Structure Selection" << endl;
         cout << "Choose an option: ";
         cin >> choice;
 
@@ -96,6 +101,9 @@ void queueMenu(Queue &myQueue)
             cout << "Queue cleared." << endl;
             break;
         case 5:
+            myQueue.printQueue();
+            break;
+        case 6:
             return;
         default:
             cout << "Invalid option, try again." << endl;
@@ -123,10 +131,10 @@ int main()
             queueMenu(myQueue);
             break;
         case 3:
-            cout << "Exiting the program. Goodbye!" << endl;
+            cout << "Goodbye!" << endl;
             return 0;
         default:
-            cout << "Invalid option, try again." << endl;
+            cout << "Invalid option" << endl;
         }
     }
 

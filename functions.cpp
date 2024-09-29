@@ -48,6 +48,7 @@ bool Stack::isEmpty()
 }
 void Stack::push(int data)
 {
+    //making new node with new data to be pushed at  top of existing top
     Node *newNode = new Node;
     newNode->setData(data);
     if (top == nullptr)
@@ -57,6 +58,7 @@ void Stack::push(int data)
     else
     {
         newNode->setNext(top);
+        //updating the top
         top = newNode;
     }
     size_count = size_count + 1;
@@ -69,6 +71,7 @@ void Stack::pop()
     }
     else
     {
+        //removing the top element
         Node *temp = new Node;
         temp = top->getNext();
         delete top;
@@ -78,6 +81,7 @@ void Stack::pop()
 }
 int Stack::peek()
 {
+    //return -1 incase there is no top
     if (top == nullptr)
     {
         return -1;
@@ -90,6 +94,7 @@ int Stack::size()
 }
 void Stack::clear()
 {
+    //delete all the nodes in the linked list
     while (top != nullptr)
     {
         Node *h = top;
@@ -118,6 +123,7 @@ void Stack::printStack()
 }
 Queue::Queue()
 {
+   // maintain two pointers
     rear = nullptr;
     top = nullptr;
     size_count = 0;
@@ -141,6 +147,7 @@ bool Queue::isEmpty()
 }
 void Queue::enqueue(int data)
 {
+    //adding elements to the end of node
     Node *newNode = new Node;
     newNode->setData(data);
     if (top == nullptr)
@@ -157,6 +164,7 @@ void Queue::enqueue(int data)
 }
 void Queue::dequeue()
 {
+    //removing elements from the top of the queue
     Node *temp = new Node;
     if (isEmpty())
     {
@@ -195,6 +203,7 @@ void Queue::printQueue()
 }
 void Queue::clear()
 {
+    //deleting all elements in queue
     while (top != nullptr)
     {
         Node *h = top;
