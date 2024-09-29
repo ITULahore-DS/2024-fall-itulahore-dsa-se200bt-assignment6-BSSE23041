@@ -1,3 +1,4 @@
+
 #define CATCH_CONFIG_MAIN  // This tells Catch to provide a main() - only do this in one cpp file
 #include "catch.hpp"
 #include "functions.h"
@@ -130,9 +131,8 @@ TEST_CASE("Peek from empty stack test", "[peek]") {
 }
 
 
-
 //Queue Test cases
-/*
+
 TEST_CASE("Test if queue is initially empty", "[isEmpty]") {
     Queue myQueue;
 
@@ -173,7 +173,7 @@ TEST_CASE("Dequeue function test", "[dequeue]") {
     REQUIRE(myQueue.isEmpty() == true);  // Queue should now be empty
 }
 
-TEST_CASE("Size function test", "[size]") {
+TEST_CASE("Queue Size function test", "[size]") {
     Queue myQueue;
 
     // Initially, size should be 0
@@ -228,4 +228,3 @@ TEST_CASE("Clear queue test", "[clear]") {
     REQUIRE(myQueue.size() == 0);
 }
 
-*/
